@@ -1,0 +1,234 @@
+/* Reset styles for the navbar */
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navbar container */
+  .navbar {
+   
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0; /* Adjust the top spacing as needed */
+    padding-right: 20px; 
+    background-color: #333; /* Dark background color */
+    overflow: hidden; /* Clear floats */
+  }
+  
+  /* Style the navigation links */
+  .navbar a {
+    float: left; /* Float the links horizontally */
+    display: block; /* Make the links block-level elements */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    display: flex;
+    gap: 1000px;
+    padding: 14px 20px; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Change background color of navbar links on hover */
+  .navbar a:hover {
+    background-color: #ddd; /* Lighter background color */
+    color: black; /* Dark text color */
+  }
+  
+  /* Style the active link */
+  .navbar a.active {
+    background-color: #4CAF50; /* Green background color */
+  }
+  
+  /* Make navbar responsive */
+  @media screen and (max-width: 100px) {
+    .navbar a {
+      float: none; /* Remove float */
+      display: inline-block; /* Make links stack vertically */
+      text-align: left; /* Left-align text */
+    }
+  }
+
+  .feature-banner {
+    min-height: 450px;
+    background-color: antiquewhite;
+    background-image: url(); /* Replace 'banner.jpg' with your image */
+    background-size: 500px;
+    background-position: center;
+    color: #000000;
+    text-align: justify;
+    padding: 100px 0; /* Adjust padding as needed */
+}
+
+.navbar.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+
+.sticky-section {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Background color for the section */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.left {
+    flex: 1; /* Take up 50% of the container width */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50px; /* Adjust the top spacing as needed */
+    padding-right: 20px; /* Adjust spacing between left and right sides */
+}
+
+.left img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Adjust spacing between image and heading */
+}
+
+.right {
+    flex: 1; /* Take up 50% of the container width */
+}
+
+.scrollable-description {
+    max-height: 300px; /* Set maximum height for scrollable description */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0; /* Remove default margin for h2 */
+font-size: 50px;
+
+}
+
+
+
+
+
+.journey {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.journey h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.journey-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e0f2f1; /* Light blue background */
+    animation: spin 5s linear infinite;
+}
+
+.image-container img {
+    padding: 10%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    position: relative;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-content ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+.two-column-table{
+
+    column-count: 2;
+    row
+    background-color: rgb(129, 168, 155), ;
+    
+}
+
+.two-column-table .row {
+    background-position: 50%;
+}
+
+
